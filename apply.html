@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title> World Power Agency </title>
+        
+        <link rel = "stylesheet" href = "style.css" />
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    </head>
+
+    <body>
+
+        <div class = "navigation">
+
+            <ul>
+                            
+                <li class = "nav-left"> 
+                            
+                    <a href = "introduction.html"> <img class = "navigation" src = "World Power Agency Logo.png"> </a> 
+                            
+                </li> 
+                            
+                <li class = "nav-center"> 
+                            
+                    <a href = "testimonials.html"> About </a> 
+
+                    <a href = "work.html"> Work </a> 
+
+                    <a href = "work.html#program"> Program </a> 
+                        
+                </li>
+                        
+                <li class = "nav-right">
+                        
+                    <a class = "bluelink" href = "apply.html"> Apply <span class = "material-symbols-outlined"> chevron_right </span> </a>
+
+                </li>
+
+            </ul>
+
+            <div class = "hover-bar"> </div>
+
+        </div>
+
+    </div>
+
+    <div class = "landscape">
+
+        <div class = "neuekaine"> <h1 class = "fade-text"> Apply </h1> </div>
+        <div class = "neuekaine"> <h1 class = "fade-text"> And Spark </h1> </div>
+        <div class = "neuekaine"> <h1 class = "fade-text"> A Change </h1> </div>
+
+            <div class = "slide-fade-in"> <div class = "helveticanowtextlight"> <p class = "description"> Our support and board overlooks all responses and commits their best effort to respond within 24 hours. Please remain patient. </p> </div> </div> 
+
+        </div>
+
+    <div class = "form-container" id = "form-container">
+    
+        <form action = "https://formspree.io/f/mblgadav" id="contact-form" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter"> Mark as application </label>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="thank-you-message" id="thank-you-message">
+        <h2 class = "thankyou" >Thank You!</h2>
+        <p class = "thankyou">Your message has been successfully submitted. We'll get back to you soon. </p>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('form-container').style.display = 'none';
+
+           
+            document.getElementById('thank-you-message').style.display = 'block';
+        }
+    </script>
+    
+    </div>
+
+    <div class = "bottomnav">
+
+        <div class = "disclaimer slide-fade-in"> The information provided on this energy website is intended solely for general informational purposes. It is not intended to constitute professional advice, expert guidance, or an endorsement of any kind. While efforts are made to ensure the accuracy and relevance of the content featured, this website cannot guarantee the completeness, validity, or reliability of the information presented. Visitors and users are strongly encouraged to independently verify all information, conduct thorough research, and seek professional advice where appropriate.
+
+            This website is not affiliated, associated, or partnered with any organizations, corporations, individuals, or other entities that may be mentioned, featured, or linked to within its content. Any references or appearances of external parties, such as government agencies, private companies, researchers, or advocacy groups, are intended purely for informational purposes. These references should not be interpreted as endorsements, recommendations, or representations of any kind. Any opinions expressed on the website are solely those of the respective authors, contributors, or commentators and do not necessarily reflect the official stance or viewpoints of this website or its operators. <br> <br />
+            
+            Additionally, this website and its operators disclaim any and all responsibility or liability for errors, inaccuracies, omissions, or inconsistencies in the content provided. Visitors and users acknowledge that the information published on this website is subject to change, revision, or removal at any time without notice. Any reliance on the information or materials presented is strictly at the user's own risk, and the website shall not be held liable for any damages, losses, or claims—whether direct, indirect, incidental, consequential, or otherwise—arising from the use or reliance upon the information provided.
+            
+            The website may also include links to external websites or resources as a convenience to users. These links are not maintained, controlled, or reviewed by this website, and their inclusion does not imply endorsement, approval, or affiliation. Users accessing external links do so entirely at their own risk, and this website bears no responsibility for the content, services, products, or policies of third-party websites. It is the responsibility of the user to exercise discretion and evaluate the suitability and credibility of any external content or services.
+            
+            Furthermore, all intellectual property rights, copyrights, trademarks, and proprietary materials featured on this website remain the property of their respective owners or authors. Unauthorized reproduction, distribution, or commercial use of the content without proper authorization is strictly prohibited and may result in legal consequences. By accessing this website, users acknowledge and agree to comply with these limitations and respect the intellectual property of others. <br> <br />
+            
+            This website operates with the intention to provide general insights and engage users in exploring energy-related topics. It does not make warranties, express or implied, about the content's fitness for any particular purpose or application. Users are advised to interpret the information presented with discretion and consider seeking guidance from qualified professionals for specific queries or situations.
+            
+            Moreover, this website does not assume any responsibility for the actions, outcomes, or decisions taken by users as a result of engaging with the content. Whether applied in professional, personal, or academic contexts, the responsibility for such actions lies solely with the user. This disclaimer shall remain in effect and serve as a binding statement of the terms and conditions governing the use of this website. </div>
+
+    </div>
+
+
+    </body>
+
+    <script src = "fade-in.js"> </script>
+
+    <script src = "fade-color.js"> </script>
+
+    <script src = "slide-transition.js"> </script>
+
+    <script src = "number-counter.js"> </script>
+
+</html>
